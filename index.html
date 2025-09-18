@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master the TET (Teacher Eligibility Test) in J&K. This guide provides a complete 20-point overview, detailed syllabus, previous year questions (PYQs), and a countdown for the in-service teacher deadline.">
+    <title>The Ultimate TET (Teacher Eligibility Test) Guide for J&K</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- General Styling & Dark Theme --- */
+        :root {
+            --bg-color: #12121c; /* Deep space blue background */
+            --primary-card-bg: #1b1b2f; /* Slightly lighter card background */
+            --accent-color: #03a9f4; /* Bright blue for accents */
+            --secondary-accent: #f441a5; /* Pink for gradients */
+            --text-color: #e0e0e0; /* Off-white for readability */
+            --heading-color: #ffffff; /* Pure white for headings */
+            --subtle-text: #a0a0c0; /* Muted purple-gray for descriptions */
+            --card-border: rgba(3, 169, 244, 0.2); /* Faint blue border */
+            --shadow-color: rgba(0, 0, 0, 0.4); /* Deep shadow */
+            --modal-bg: #2a2a45;
+            --footer-bg: #0e0e1a; /* Darker background for footer */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased; /* For sharper text rendering */
+            -moz-osx-font-smoothing: grayscale; /* For sharper text rendering */
+        }
+        
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        /* --- Intro Screen Styling --- */
+        .intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg-color);
+            z-index: 2000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.8s ease-out, visibility 0.8s;
+        }
+
+        .intro-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .intro-content {
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .intro-content > *:not(.name-container) {
+            opacity: 0;
+            animation: fadeInSlideUp 1.2s ease-out forwards;
+        }
+
+        .intro-content h2 {
+            font-size: 1.2rem;
+            color: var(--subtle-text);
+            font-weight: 400;
+            animation-delay: 0.5s;
+        }
+
+        .intro-content .name-container {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            animation: fadeInSlideUp 1.2s ease-out forwards; /* Apply fade in to the container */
+            animation-delay: 0.8s;
+            opacity: 0;
+        }
+
+        .intro-content .name-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-accent));
+            animation: wipe-out 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes wipe-out {
+            from { transform: translateX(0%); }
+            to { transform: translateX(101%); }
+        }
+
+        @keyframes gradient-animate {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .intro-content h1 {
+            font-size: 3.5rem;
+            margin: 0.5rem 0;
+            color: var(--heading-color);
+        }
+
+        .intro-content p {
+            font-size: 1.1rem;
+            color: var(--subtle-text);
+            max-width: 500px;
+            margin-bottom: 2rem;
+            animation-delay: 1.8s;
+        }
+
+        #enter-btn {
+            padding: 0.8rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--heading-color);
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-accent));
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            animation-delay: 2.2s;
+        }
+
+        #enter-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 25px rgba(3, 169, 244, 0.4);
+        }
+
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main content wrapper */
+        #main-content-wrapper {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 1s ease-in;
+            background-image: radial-gradient(circle at 1% 1%, rgba(3, 169, 244, 0.15) 0px, transparent 50%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* --- Header Section --- */
+        .header {
+            text-align: center;
+            padding: 4rem 0 2rem 0; /* Adjusted padding */
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .header h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-accent), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            letter-spacing: -1.5px; /* Slightly increased for effect */
+            background-size: 200% auto;
+            animation: gradient-animate 10s ease-in-out infinite;
+        }
+
+        .header p {
+            font-family: 'Poppins', sans-serif; /* Reverted to the primary professional font */
+            font-size: 1.1rem; /* Adjusted for better hierarchy */
+            color: var(--subtle-text); /* Used a more subtle color to complement the main heading */
+            max-width: 800px;
+            margin: 0 auto 2.5rem auto; /* Added bottom margin to space it from the quote box */
+            line-height: 1.7;
+            /* Removed the monospace font and text-shadow for a cleaner, professional look */
+        }
+
+        /* --- Header Quote --- */
+        .header-quote {
+            max-width: 750px;
+            margin: 2.5rem auto 0 auto;
+            padding: 1.5rem;
+            background-color: rgba(27, 27, 47, 0.5);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 0 8px 8px 0;
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .header-quote svg {
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        .header-quote p {
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0; /* Override default p margin */
+        }
+
+        .header-quote p .quote-author {
+            display: block;
+            text-align: right;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--subtle-text);
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .header-quote .quote-explanation {
+            font-style: normal;
+            font-size: 0.9rem;
+            color: var(--subtle-text);
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--card-border);
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* --- Countdown Timer Section --- */
+        .timer-section {
+            text-align: center;
+            margin: 2rem auto 3rem auto;
+            padding: 2rem;
+            background-color: rgba(27, 27, 47, 0.5);
+            border-radius: 12px;
+            border: 1px solid var(--card-border);
+            max-width: 900px;
+        }
+        
+        .timer-section h2 {
+            font-size: 1.8rem;
+            color: var(--heading-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .timer-assumption {
+            color: var(--subtle-text);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .countdown-timer {
+            position: relative; /* Added to contain the absolute canvas */
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap; /* Prevent wrapping */
+            /* background-color: var(--bg-color); */ /* Removed to allow canvas background to show */
+            border: 1px solid var(--card-border); /* A subtle border around it */
+            border-radius: 12px; /* Rounded corners for the single panel */
+            overflow: hidden; /* Ensures inner content respects the rounded corners */
+            max-width: 500px; /* Constrain width for a cleaner look */
+            margin: 0 auto; /* Center the panel */
+            background-color: rgba(18, 18, 28, 0.5); /* Added a slightly darker base for better contrast */
+        }
+
+        #timer-particles-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; /* Sits at the bottom of the stack */
+            filter: blur(1px); /* Adds a soft, nebula-like glow to the particles */
+        }
+
+        .timer-box {
+            /* background: var(--bg-color); */ /* Removed individual background */
+            padding: 1rem;
+            /* border-radius: 8px; */ /* Removed individual radius */
+            /* min-width: 100px; */ /* Removed to allow flexible sizing */
+            border-top: none; /* Removed individual top border */
+            flex: 1; /* Make all 4 sections equal width */
+            text-align: center; /* Ensure text is centered */
+            border-right: 1px solid var(--card-border); /* Add dividers */
+            position: relative; /* Added to ensure it sits above the canvas */
+            z-index: 2; /* Sits on top of the canvas */
+            background: transparent; /* Ensure canvas is visible */
+        }
+
+        .timer-box:last-child {
+            border-right: none; /* Remove divider from the last box */
+        }
+
+        .timer-box span {
+            display: block;
+        }
+
+        .timer-box .time-value {
+            font-family: 'Poppins', sans-serif; /* Switched to the main professional font */
+            font-size: 2.4rem; /* Slightly refined size */
+            font-weight: 600; /* Softer weight for a sleeker look */
+            color: var(--heading-color);
+            letter-spacing: 2px; /* Increased spacing for a modern, airy feel */
+        }
+
+        .timer-box .time-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: var(--subtle-text);
+        }
+        
+        .timer-quote {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--card-border);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .timer-quote p {
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--text-color);
+            margin-bottom: 0.25rem;
+            text-align: center;
+        }
+
+        .timer-quote span {
+            display: block;
+            text-align: right;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--subtle-text);
+        }
+        
+        /* --- Highlights Section --- */
+        .highlights-section {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0 4rem 0; /* Adjusted margin */
+            flex-wrap: wrap;
+        }
+
+        .highlight-card {
+            background: rgba(27, 27, 47, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 2rem;
+            flex-basis: 300px;
+            flex-grow: 1;
+            text-align: center;
+            border: 1px solid var(--card-border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            position: relative; /* For shine effect */
+            overflow: hidden; /* For shine effect */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+
+        .highlight-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            fill: var(--accent-color);
+        }
+
+        .highlight-card h3 {
+            font-size: 1.5rem;
+            color: var(--heading-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-card p {
+            color: var(--subtle-text);
+            font-size: 0.9rem;
+        }
+
+        /* --- Main Content Grid --- */
+        .grid-section h2 {
+            font-size: 2.2rem;
+            color: var(--heading-color);
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 4px solid var(--accent-color);
+            font-weight: 600;
+            letter-spacing: -0.5px; /* Subtle spacing for professionalism */
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        /* --- Info Card Styling --- */
+        .info-card {
+            background-color: var(--primary-card-bg);
+            border-radius: 12px;
+            padding: 1.75rem;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 8px 30px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            position: relative; /* For shine effect */
+            overflow: hidden; /* For shine effect */
+        }
+        
+        .clickable-card {
+             cursor: pointer;
+        }
+
+        .info-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: calc(var(--order) * 100ms);
+        }
+        
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px var(--shadow-color);
+            border-color: var(--accent-color);
+        }
+
+        /* --- SHINY EFFECT --- */
+        .info-card::before, .highlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 100%;
+            background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, 0.1) 50%, transparent 80%);
+            transform: translateX(-100%) skewX(-25deg);
+        }
+
+        .info-card:hover::before, .highlight-card:hover::before {
+            transform: translateX(100%) skewX(-25deg);
+            transition: transform 0.8s ease;
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-number {
+            background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent));
+            color: var(--heading-color);
+            font-family: 'Space Mono', monospace; /* Professional font pairing */
+            font-weight: 700;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(3, 169, 244, 0.3);
+        }
+
+        .card-header h3 {
+            font-size: 1.4rem;
+            color: var(--heading-color);
+        }
+
+        .info-card p {
+            font-size: 0.95rem;
+            color: var(--subtle-text);
+            text-align: justify;
+        }
+        
+        .info-card strong {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        /* --- Modal/Popup Styling --- */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(18, 18, 28, 0.5); /* Darker overlay */
+            backdrop-filter: blur(10px); /* Increased blur */
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            perspective: 1000px; /* For 3D animations */
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            /* Glassmorphism Effect */
+            background: linear-gradient(135deg, rgba(27, 27, 47, 0.6), rgba(27, 27, 47, 0.4));
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+
+            padding: 2.5rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            
+            /* Glassmorphism Border & Shadow */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+            
+            /* 3D Entrance Animation */
+            opacity: 0;
+            transform: scale(0.95) rotateY(-15deg);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
+        }
+        
+        .modal-overlay.active .modal-content {
+            opacity: 1;
+            transform: scale(1) rotateY(0);
+        }
+        
+        /* Custom Themed Scrollbar for Modal */
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .modal-content::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+        .modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--accent-color), var(--secondary-accent));
+            border-radius: 4px;
+        }
+        .modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--secondary-accent), var(--accent-color));
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--card-border);
+            color: var(--text-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1001;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            transform: rotate(90deg) scale(1.1);
+        }
+
+        .modal-title {
+            font-size: 2rem;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            position: relative; /* For the animated underline */
+        }
+        
+        /* Animated Title Underline */
+        .modal-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-accent), var(--accent-color));
+            background-size: 200% auto;
+            animation: gradient-animate 4s linear infinite;
+        }
+
+        .modal-body {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .modal-body p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .modal-body ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .modal-body ul ul {
+            padding-left: 2rem;
+        }
+
+        .modal-body li {
+            margin-bottom: 0.5rem;
+            text-align: justify; /* JUSTIFICATION APPLIED HERE */
+        }
+        
+        .modal-body .sub-heading {
+             font-weight: 600;
+             color: var(--heading-color);
+             font-size: 1.1rem;
+             margin-top: 1.5rem;
+        }
+        
+        .modal-body .sub-heading-small {
+             font-weight: 600;
+             color: var(--heading-color);
+             font-size: 1.0rem;
+             margin-top: 1.5rem;
+             margin-bottom: 0.5rem;
+        }
+
+        .modal-body strong {
+            color: var(--accent-color);
+        }
+
+        /* --- Example Question Styling --- */
+        .modal-body .example-question {
+            background-color: rgba(18, 18, 28, 0.7);
+            border-left: 4px solid var(--secondary-accent);
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .modal-body .example-question p {
+            margin-bottom: 0.75rem;
+            font-style: italic;
+        }
+
+        .modal-body .example-question ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-body .example-question li {
+            padding-left: 1rem;
+            margin-bottom: 0.25rem;
+            text-align: left; /* Keep MCQ options left-aligned for clarity */
+        }
+
+        .modal-body .example-question .answer {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+        
+        .modal-body .show-answer-btn {
+            background-color: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .modal-body .show-answer-btn:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        .modal-body .answer-container {
+            display: none; /* Hidden by default */
+            margin-top: 0.5rem;
+        }
+        
+        /* --- Link to Detailed Button --- */
+        .modal-body .link-to-detailed {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-accent));
+            color: var(--heading-color);
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .modal-body .link-to-detailed:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 20px rgba(3, 169, 244, 0.3);
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: var(--footer-bg);
+            padding: 4rem 2rem 2rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            border-top-style: solid;
+            border-top-width: 3px;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to left, var(--accent-color), var(--secondary-accent), var(--accent-color));
+            color: #cccccc; /* Set base dull white color */
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 2rem;
+        }
+        
+        .footer-column {
+            text-align: center; /* Center all column content */
+        }
+        
+        .footer-column h4 {
+            font-size: 1.2rem;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .footer-column h4::after {
+            content: '';
+            position: absolute;
+            left: 50%; /* Center the underline */
+            transform: translateX(-50%); /* Adjust for its own width */
+            bottom: -8px;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-accent));
+        }
+        
+        .footer-column p, .footer-column li {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #cccccc; /* Dull white for paragraphs */
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0; /* Remove default padding for better centering */
+        }
+        
+        .footer-column li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-column a {
+            color: #cccccc; /* Dull white for links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-column a:hover {
+            color: var(--accent-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: -0.5rem; /* Align with list items */
+            justify-content: center; /* Center social icon(s) */
+        }
+        
+        .social-links a {
+            color: #cccccc; /* Dull white for social links */
+            display: inline-block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent-color);
+            transform: translateY(-3px);
+            padding-left: 0; /* Override general link hover */
+        }
+        
+        .social-links svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+        
+        .footer-disclaimer {
+            font-size: 0.85rem;
+        }
+        
+        .footer-disclaimer strong {
+            color: var(--text-color);
+        }
+        
+        .footer-copyright {
+            text-align: center;
+            padding-top: 2.5rem;
+            margin-top: 2.5rem;
+            border-top: 1px solid var(--card-border);
+            font-size: 0.9rem;
+        }
+
+
+        /* --- AI Assistant --- */
+        #ai-fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent));
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(3, 169, 244, 0.4);
+            transition: transform 0.3s ease;
+        }
+        
+        #ai-fab:hover {
+            transform: scale(1.1);
+        }
+
+        #ai-chat-window {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 90%;
+            max-width: 380px;
+            height: 500px;
+            background-color: var(--modal-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 15px;
+            box-shadow: 0 10px 40px var(--shadow-color);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        #ai-chat-window.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            visibility: visible;
+        }
+        
+        .chat-header {
+            padding: 1rem;
+            background-color: var(--primary-card-bg);
+            border-bottom: 1px solid var(--card-border);
+            display: flex;
+            /* justify-content: space-between; */ /* Changed for back button */
+            justify-content: flex-start;
+            gap: 1rem; /* Added for spacing */
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        .chat-header h3 {
+            color: var(--heading-color);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        
+        .chat-close-btn {
+            background: none;
+            border: none;
+            color: var(--subtle-text);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.2s, transform 0.2s ease;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .chat-close-btn:hover {
+            color: var(--heading-color);
+            transform: scale(1.1); /* Changed hover effect */
+        }
+        
+        .chat-messages {
+            flex-grow: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .chat-message {
+            padding: 0.75rem 1rem;
+            border-radius: 18px;
+            max-width: 80%;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .ai-message {
+            background-color: var(--primary-card-bg);
+            color: var(--text-color);
+            border-bottom-left-radius: 4px;
+            align-self: flex-start;
+        }
+
+        .user-message {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            font-weight: 500;
+            border-bottom-right-radius: 4px;
+            align-self: flex-end;
+        }
+
+        .chat-suggestions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            padding-top: 0.5rem;
+            margin-top: 0.5rem;
+            border-top: 1px solid var(--card-border);
+        }
+
+        .suggestion-btn {
+            background-color: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-align: left;
+        }
+
+        .suggestion-btn:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        .typing-indicator {
+            align-self: flex-start;
+        }
+        
+        .typing-indicator span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--subtle-text);
+            animation: bounce 1s infinite;
+        }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.1s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.2s; }
+
+        @keyframes bounce {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-5px); }
+        }
+        
+        .chat-input-form {
+            display: flex;
+            padding: 0.75rem;
+            border-top: 1px solid var(--card-border);
+            flex-shrink: 0;
+        }
+        
+        #chat-input {
+            flex-grow: 1;
+            border: none;
+            background: transparent;
+            color: var(--text-color);
+            padding: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+        }
+        
+        #send-chat-btn {
+            background: none;
+            border: none;
+            color: var(--accent-color);
+            cursor: pointer;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        #send-chat-btn:hover {
+            opacity: 0.8;
+        }
+
+        /* --- Back to Top Button --- */
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 90px; /* Adjusted: Moved up to sit above the AI button */
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--accent-color);
+            color: white;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 4px 15px rgba(3, 169, 244, 0.4);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        #backToTopBtn:hover {
+            transform: scale(1.1);
+        }
+
+        /* --- MOBILE RESPONSIVE DESIGN --- */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem; /* Tighter padding on smaller screens */
+            }
+
+            .header, .intro-content {
+                padding: 3rem 1rem; /* Reduced vertical padding */
+            }
+
+            .header h1, .intro-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header p, .intro-content p {
+                font-size: 1rem; /* Slightly smaller description */
+            }
+
+            .grid-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr; /* Stack cards in a single column */
+                gap: 1rem; /* Reduce gap between cards */
+            }
+            
+            .info-card {
+            transform: translateY(30px) scale(0.95);
+            }
+
+            .footer {
+                padding: 3rem 1.5rem 1.5rem 1.5rem;
+            }
+        }
+
+        /* Responsive AI chat window */
+        @media (max-width: 480px) {
+            #ai-chat-window {
+                height: calc(100vh - 80px); /* Fullscreen-like on mobile */
+                width: calc(100vw - 20px);
+                bottom: 70px;
+                right: 10px;
+            }
+             #ai-fab {
+                bottom: 10px;
+                right: 10px;
+                width: 50px;
+                height: 50px;
+            }
+            #backToTopBtn {
+                bottom: 70px; /* Adjusted for mobile */
+                right: 10px;  /* Aligned with mobile AI button */
+            }
+        }
+
+
+        /* Specific adjustments for very small screens */
+        @media (max-width: 480px) {
+            .header h1, .intro-content h1 {
+                font-size: 2.1rem; /* Further reduce main title size */
+            }
+            
+            .highlights-section {
+                flex-direction: column; /* Ensure highlights stack vertically */
+            }
+
+            .countdown-timer {
+                /* gap: 0.5rem; */ /* No longer needed */
+            }
+            .timer-box {
+                min-width: 0; /* Remove minimum width */
+                flex: 1; /* Allow boxes to shrink to fit */
+                padding: 0.75rem 0.5rem; /* Reduce padding */
+            }
+            .timer-box .time-value {
+                font-size: 1.8rem; /* Make time value smaller */
+            }
+            .timer-box .time-label {
+                font-size: 0.7rem; /* Make time label smaller */
+            }
+            
+            .grid-section h2 {
+                font-size: 1.6rem;
+            }
+            
+            .card-header h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Intro Screen -->
+    <div class="intro-overlay" id="intro-overlay">
+        <canvas id="particles-js"></canvas>
+        <div class="intro-content">
+            <h2>Presented By</h2>
+            <div class="name-container">
+                <h1 id="intro-name">Kiran Bala Katoch</h1>
+            </div>
+            <p>Your complete guide to mastering the TET<br>(Teacher Eligibility Test) exam.</p>
+            <button id="enter-btn">Explore the Guide</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content-wrapper">
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <h1>The Ultimate TET (Teacher Eligibility Test) Guide</h1>
+                <p>An exhaustive 20-point strategic guide providing a comprehensive, A-to-Z understanding of the Teacher Eligibility Test (TET) for Jammu & Kashmir. This is your blueprint for success.</p>
+                <div class="header-quote">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#03a9f4"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    <div>
+                        <p>"Give me six hours to chop down a tree and I will spend the first four sharpening the axe."<span class="quote-author">— Abraham Lincoln</span></p>
+                        <p class="quote-explanation">
+                            <strong>Applying the Wisdom:</strong> In this analogy, the 'tree' is the TET exam, and 'chopping it down' is the act of studying and taking the test. This guide represents the crucial first four hours—it's not the study material itself, but the strategic blueprint. It's where you "sharpen your axe" by understanding every rule, pattern, and component of the exam *before* you begin your preparation. Acing the TET starts not with a book, but with a plan.
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Countdown Timer Section -->
+            <section class="timer-section">
+                <h2>Approximate Deadline for In-Service Teachers</h2>
+                <p class="timer-assumption">This countdown is based on a hypothetical government approval date of February 1, 2026. The actual deadline will be two years from the official notification.</p>
+                <div class="countdown-timer">
+                    <canvas id="timer-particles-canvas"></canvas>
+                    <div class="timer-box">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+                <div class="timer-quote">
+                    <p>"Lost time is never found again."</p>
+                    <span>— Benjamin Franklin</span>
+                </div>
+            </section>
+
+            <!-- HIGHLIGHTS SECTION -->
+            <section class="highlights-section">
+                <div class="highlight-card clickable-card" data-point="syllabus-overview" data-title="Syllabus Overview">
+                    <svg class="highlight-icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    <h3>Syllabus Overview</h3>
+                    <p>A quick glance at all subjects and topics.</p>
+                </div>
+                <div class="highlight-card clickable-card" data-point="pattern" data-title="Exam Pattern & Structure">
+                    <svg class="highlight-icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    <h3>Exam Pattern</h3>
+                    <p>Questions, marks, duration, and marking scheme.</p>
+                </div>
+                <div class="highlight-card clickable-card" data-point="resources" data-title="Key Preparation Resources">
+                    <svg class="highlight-icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                    <h3>Key Resources</h3>
+                    <p>Essential study materials and preparation tips.</p>
+                </div>
+            </section>
+
+
+            <main>
+                <!-- Section A: The Basics & Eligibility -->
+                <section class="grid-section">
+                    <h2 id="part-a">Part A: The Basics & Eligibility</h2>
+                    <div class="info-grid">
+                        <div class="info-card clickable-card" style="--order: 1;" data-point="1" data-title="Full Name & Purpose">
+                            <div class="card-header">
+                                <div class="card-number">1</div>
+                                <h3>Full Name & Purpose</h3>
+                            </div>
+                            <p>The exam is the <strong>Teacher Eligibility Test (TET)</strong>. Its purpose, rooted in the RTE Act 2009, is to establish a quality benchmark, ensuring every teacher has the essential knowledge and pedagogical skills.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 2;" data-point="2" data-title="Two Main Types">
+                            <div class="card-header">
+                                <div class="card-number">2</div>
+                                <h3>Two Main Types</h3>
+                            </div>
+                            <p>In J&K, you can take either the <strong>CTET (Central)</strong> or the <strong>JKTET (UT-level)</strong>. CTET is a national exam but is officially recognized and valid for J&K government school recruitment, offering more frequent opportunities.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 3;" data-point="3" data-title="Who Needs It">
+                            <div class="card-header">
+                                <div class="card-number">3</div>
+                                <h3>Who Needs It</h3>
+                            </div>
+                            <p>It's mandatory for all aspiring teachers for government schools (Classes 1-8). A Supreme Court ruling also makes it compulsory for many <strong>in-service teachers</strong> to secure promotions or continue their service.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 4;" data-point="4" data-title="Educational Qualification">
+                            <div class="card-header">
+                                <div class="card-number">4</div>
+                                <h3>Educational Qualification</h3>
+                            </div>
+                            <p><strong>Paper I (1-5):</strong> Requires Senior Secondary (12th) with at least 50% marks + a 2-year Diploma in Elementary Education (D.El.Ed). <br><strong>Paper II (6-8):</strong> Requires a Bachelor's Degree + D.El.Ed OR a Bachelor of Education (B.Ed).</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 5;" data-point="5" data-title="Age Limit">
+                            <div class="card-header">
+                                <div class="card-number">5</div>
+                                <h3>Age Limit</h3>
+                            </div>
+                            <p>There is <strong>no age limit</strong> to appear for the TET exam itself. However, age limits set by recruitment agencies (like JKSSB) are applicable when you apply for the actual teaching job after qualifying.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section B: Exam Structure & Syllabus -->
+                <section class="grid-section">
+                    <h2 id="part-b">Part B: Exam Structure & Syllabus</h2>
+                    <div class="info-grid">
+                        <div class="info-card clickable-card" style="--order: 1;" data-point="6" data-title="Exam Papers">
+                            <div class="card-header">
+                                <div class="card-number">6</div>
+                                <h3>Exam Papers</h3>
+                            </div>
+                            <p>The exam has two distinct papers: <strong>Paper I</strong> for teaching Classes 1-5, and <strong>Paper II</strong> for teaching Classes 6-8. You can appear in either one or both, based on your qualifications.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 2;" data-point="7" data-title="Exam Mode">
+                            <div class="card-header">
+                                <div class="card-number">7</div>
+                                <h3>Exam Mode</h3>
+                            </div>
+                            <p><strong>CTET</strong> is conducted <strong>Online</strong> as a Computer-Based Test (CBT). <strong>JKTET</strong> has traditionally been <strong>Offline</strong> (Pen-and-Paper OMR sheet), though you should always verify the latest notification.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 3;" data-point="8" data-title="Total Questions & Marks">
+                            <div class="card-header">
+                                <div class="card-number">8</div>
+                                <h3>Total Questions & Marks</h3>
+                            </div>
+                            <p>Both papers consist of <strong>150 Multiple Choice Questions (MCQs)</strong> for a total of <strong>150 marks</strong>. The structure is simple and direct: one question carries one mark.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 4;" data-point="9" data-title="Exam Duration">
+                            <div class="card-header">
+                                <div class="card-number">9</div>
+                                <h3>Exam Duration</h3>
+                            </div>
+                            <p>The time allotted for each paper is <strong>150 minutes (2.5 hours)</strong>. This averages to exactly one minute per question, making time management a critical skill for success.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 5;" data-point="10" data-title="Marking Scheme">
+                            <div class="card-header">
+                                <div class="card-number">10</div>
+                                <h3>Marking Scheme</h3>
+                            </div>
+                            <p>The marking scheme is straightforward and candidate-friendly: you are awarded <strong>+1 mark</strong> for every correct answer you select. There are no marks for unanswered questions.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 6;" data-point="11" data-title="Negative Marking">
+                            <div class="card-header">
+                                <div class="card-number">11</div>
+                                <h3>Negative Marking</h3>
+                            </div>
+                            <p>A major advantage: there is <strong>NO negative marking</strong> for incorrect answers. This strategic rule means you should attempt all 150 questions, even if it requires an educated guess.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 7;" data-point="12" data-title="Syllabus Overview (Paper I)">
+                            <div class="card-header">
+                                <div class="card-number">12</div>
+                                <h3>Syllabus Overview (Paper I)</h3>
+                            </div>
+                            <p>Consists of 5 sections: Child Development & Pedagogy, Language I, Language II, Mathematics, and Environmental Studies. Each section has 30 questions.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 8;" data-point="13" data-title="Syllabus Overview (Paper II)">
+                            <div class="card-header">
+                                <div class="card-number">13</div>
+                                <h3>Syllabus Overview (Paper II)</h3>
+                            </div>
+                            <p>Consists of 3 compulsory sections (Child Pedagogy, Language I & II) and a 60-mark choice between Mathematics & Science or Social Studies/Science, based on your teaching specialization.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 9;" data-point="14" data-title="Syllabus Standard">
+                            <div class="card-header">
+                                <div class="card-number">14</div>
+                                <h3>Syllabus Standard</h3>
+                            </div>
+                            <p>The content is based on topics from the <strong>NCERT syllabus for Classes 1 to 8</strong>. However, questions test conceptual understanding and application, not just rote memorization.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section C: Timeline & Results -->
+                <section class="grid-section">
+                    <h2 id="part-c">Part C: Timeline & Results</h2>
+                    <div class="info-grid">
+                        <div class="info-card clickable-card" style="--order: 1;" data-point="15" data-title="Exam Frequency">
+                            <div class="card-header">
+                                <div class="card-number">15</div>
+                                <h3>Exam Frequency</h3>
+                            </div>
+                            <p><strong>CTET</strong> has a reliable, predictable schedule and is held biannually (<strong>twice a year</strong>). <strong>JKTET's</strong> schedule is less regular and depends on announcements from the UT administration.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 2;" data-point="16" data-title="Qualifying Marks">
+                            <div class="card-header">
+                                <div class="card-number">16</div>
+                                <h3>Qualifying Marks</h3>
+                            </div>
+                            <p>General category candidates must score <strong>60% or more (90 out of 150)</strong>. Reserved categories (SC/ST/OBC) are usually given a 5% relaxation, requiring a score of 55% to qualify.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 3;" data-point="17" data-title="Certificate Validity">
+                            <div class="card-header">
+                                <div class="card-number">17</div>
+                                <h3>Certificate Validity</h3>
+                            </div>
+                            <p>The TET eligibility certificate, once earned, is now valid for a <strong>lifetime</strong>. This is a significant change from the previous 7-year validity period, making it a one-time achievement.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 4;" data-point="18" data-title="Number of Attempts">
+                            <div class="card-header">
+                                <div class="card-number">18</div>
+                                <h3>Number of Attempts</h3>
+                            </div>
+                            <p>There is <strong>no limit</strong> on the number of attempts. You can take the exam as many times as you wish to either qualify or to improve your score for recruitments where TET marks are given weightage.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Section D: What Happens Next -->
+                <section class="grid-section">
+                    <h2 id="part-d">Part D: What Happens Next</h2>
+                    <div class="info-grid">
+                        <div class="info-card clickable-card" style="--order: 1;" data-point="19" data-title="Eligibility, Not a Job">
+                            <div class="card-header">
+                                <div class="card-number">19</div>
+                                <h3>Eligibility, Not a Job</h3>
+                            </div>
+                            <p>Qualifying the TET does not guarantee a job. It makes you <strong>eligible to apply</strong> for teaching vacancies. The actual job selection involves a separate, competitive recruitment process.</p>
+                        </div>
+                        <div class="info-card clickable-card" style="--order: 2;" data-point="20" data-title="Time Frame for In-service Teachers">
+                            <div class="card-header">
+                                <div class="card-number">20</div>
+                                <h3>Time Frame for In-service Teachers</h3>
+                            </div>
+                            <p>For existing teachers who must now pass the exam, the Supreme Court has mandated a <strong>two-year window</strong>. This period begins from the date the policy is officially implemented by the J&K government.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h4>About this Guide</h4>
+                        <p>This guide serves as a strategic blueprint for TET success in J&K, designed by <strong>Kiran Bala Katoch</strong> to empower aspirants with clear, accurate, and actionable information.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Navigation</h4>
+                        <ul>
+                            <li><a href="#part-a">The Basics & Eligibility</a></li>
+                            <li><a href="#part-b">Exam Structure & Syllabus</a></li>
+                            <li><a href="#part-c">Timeline & Results</a></li>
+                            <li><a href="#part-d">What Happens Next</a></li>
+                        </ul>
+                    </div>
+                     <div class="footer-column">
+                        <h4>Connect with Me</h4>
+                        <div class="social-links">
+                            <a href="mailto:kiransomriya@gmail.com" aria-label="Email Contact">
+                               <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Official Information</h4>
+                        <div class="footer-disclaimer">
+                            <p><strong>Last Updated:</strong> 18 September 2025</p>
+                            <p><strong>Disclaimer:</strong> Always consult official websites (NCTE, CTET) for the latest notifications. This guide is for informational purposes only.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Kiran Bala Katoch. All Rights Reserved.</p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="modal-container" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close" aria-label="Close dialog">&times;</button>
+            <h2 id="modal-title" class="modal-title">Detailed Guide</h2>
+            <div id="modal-body" class="modal-body">
+                <p>Detailed information will be loaded here.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant Structure -->
+    <button id="ai-fab" aria-label="Open AI Assistant">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V4c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+    </button>
+    <div id="ai-chat-window">
+        <div class="chat-header">
+            <button id="chat-close-btn" class="chat-close-btn" aria-label="Go back">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            </button>
+            <h3>AI Sahayak</h3>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="chat-message ai-message">
+                Namaste! TET exam ke baare mein aap jo bhi jaanna chahte hain, mujhse puchiye.
+            </div>
+            <div id="chat-suggestions" class="chat-suggestions">
+                <button class="suggestion-btn">Negative marking hai kya?</button>
+                <button class="suggestion-btn">Syllabus kya hai?</button>
+                <button class="suggestion-btn">Passing marks kitne hain?</button>
+            </div>
+        </div>
+        <form id="chat-input-form" class="chat-input-form">
+            <input type="text" id="chat-input" placeholder="Apna sawaal yahan likhein..." autocomplete="off">
+            <button type="submit" id="send-chat-btn" aria-label="Send Message">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"/></svg>
+            </button>
+        </form>
+    </div>
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Go to top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></svg>
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Intro Screen Logic ---
+            const introOverlay = document.getElementById('intro-overlay');
+            const enterBtn = document.getElementById('enter-btn');
+            const mainContent = document.getElementById('main-content-wrapper');
+
+            const nameEl = document.getElementById('intro-name');
+            const nameText = nameEl.textContent;
+            
+            enterBtn.addEventListener('click', () => {
+                introOverlay.classList.add('hidden');
+                mainContent.style.visibility = 'visible';
+                mainContent.style.opacity = '1';
+                setTimeout(() => {
+                    introOverlay.style.display = 'none';
+                }, 800);
+            });
+            
+            // --- Gentle Cosmic Dust for Intro Screen ---
+            const dustCanvas = document.getElementById('particles-js');
+            const ctx = dustCanvas.getContext('2d');
+            let particlesArray = [];
+            const numberOfParticles = 300;
+            const colors = ['#03a9f4', '#f441a5', '#e0e0e0'];
+
+            function resizeCanvas() {
+                dustCanvas.width = window.innerWidth;
+                dustCanvas.height = window.innerHeight;
+            }
+
+            function initParticles() {
+                particlesArray = [];
+                for (let i = 0; i < numberOfParticles; i++) {
+                    const size = Math.random() * 1.5 + 0.5;
+                    const x = Math.random() * dustCanvas.width;
+                    const y = Math.random() * dustCanvas.height;
+                    const directionX = (Math.random() * 0.4) - 0.2;
+                    const directionY = (Math.random() * 0.4) - 0.2;
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    const opacity = Math.random() * 0.4 + 0.1; // Low opacity
+
+                    particlesArray.push({
+                        x: x,
+                        y: y,
+                        directionX: directionX,
+                        directionY: directionY,
+                        size: size,
+                        color: color,
+                        opacity: opacity
+                    });
+                }
+            }
+
+            function animateDust() {
+                ctx.clearRect(0, 0, dustCanvas.width, dustCanvas.height);
+
+                for (let i = 0; i < particlesArray.length; i++) {
+                    let p = particlesArray[i];
+                    p.x += p.directionX;
+                    p.y += p.directionY;
+                    
+                    // Handle edges
+                    if (p.x > dustCanvas.width) p.x = 0;
+                    if (p.x < 0) p.x = dustCanvas.width;
+                    if (p.y > dustCanvas.height) p.y = 0;
+                    if (p.y < 0) p.y = dustCanvas.height;
+                    
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2, false);
+                    ctx.fillStyle = `rgba(${hexToRgb(p.color)}, ${p.opacity})`;
+                    ctx.fill();
+                }
+
+                requestAnimationFrame(animateDust);
+            }
+            
+            function hexToRgb(hex) {
+                let r = 0, g = 0, b = 0;
+                if (hex.length == 4) {
+                    r = "0x" + hex[1] + hex[1];
+                    g = "0x" + hex[2] + hex[2];
+                    b = "0x" + hex[3] + hex[3];
+                } else if (hex.length == 7) {
+                    r = "0x" + hex[1] + hex[2];
+                    g = "0x" + hex[3] + hex[4];
+                    b = "0x" + hex[5] + hex[6];
+                }
+                return `${+r},${+g},${+b}`;
+            }
+
+            window.addEventListener('resize', () => {
+                resizeCanvas();
+                initParticles();
+            });
+
+            resizeCanvas();
+            initParticles();
+            animateDust();
+
+            // --- Particles for Timer Background ---
+            particlesJS('timer-particles-canvas', {
+                "particles": {
+                    "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+                    "color": { "value": "#03a9f4" },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.5, "random": true },
+                    "size": { "value": 3, "random": true },
+                    "line_linked": { "enable": false },
+                    "move": { "enable": true, "speed": 1, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false }
+                },
+                "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false }, "onclick": { "enable": false }, "resize": true } },
+                "retina_detect": true
+            });
+
+
+            // --- Countdown Timer Logic ---
+            const countdownDate = new Date("February 1, 2028 00:00:00").getTime();
+            const timerInterval = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+
+                if (distance < 0) {
+                    clearInterval(timerInterval);
+                    document.getElementById("days").innerHTML = "00";
+                    document.getElementById("hours").innerHTML = "00";
+                    document.getElementById("minutes").innerHTML = "00";
+                    document.getElementById("seconds").innerHTML = "00";
+                    document.querySelector('.timer-assumption').innerHTML = "The hypothetical deadline has passed.";
+                } else {
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                    document.getElementById("days").innerHTML = String(days).padStart(2, '0');
+                    document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
+                    document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
+                    document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
+                }
+            }, 1000);
+
+            // --- Intersection Observer for card fade-in animation ---
+            const cards = document.querySelectorAll('.info-card');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            cards.forEach(card => observer.observe(card));
+
+            // --- Back to Top Button Logic ---
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            window.onscroll = function() {
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    backToTopBtn.style.display = "block";
+                } else {
+                    backToTopBtn.style.display = "none";
+                }
+            };
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+
+            // --- Modal Logic with History API ---
+            const modalContainer = document.getElementById('modal-container');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+            const closeModalBtn = document.getElementById('modal-close-btn');
+            const modalContent = modalContainer.querySelector('.modal-content');
+
+            const detailedInfo = {
+                '1': `
+                    <p>The <strong>Teacher Eligibility Test (TET)</strong> is a mandatory qualifying examination in India, established under the guidelines of the <strong>Right of Children to Free and Compulsory Education (RTE) Act, 2009</strong>.</p>
+                    <p>Its core purpose is to set a national benchmark for teacher quality. It ensures that individuals entering the teaching profession for elementary (Classes 1-5) and upper primary (Classes 6-8) levels possess the minimum aptitude and pedagogical skills required for effective, child-centric teaching.</p>
+                `,
+                '2': `
+                    <p>For candidates in Jammu & Kashmir, two TET certificates are considered valid:</p>
+                    <ul>
+                        <li><strong>CTET (Central Teacher Eligibility Test):</strong> Conducted by the CBSE, this is a national-level exam. It is required for central schools (like KVs) and is also accepted by the J&K government for its own recruitments. Its predictable, biannual schedule makes it a popular choice.</li>
+                        <li><strong>JKTET (Jammu & Kashmir TET):</strong> This is the UT-specific version of the exam. While perfectly valid for J&K state jobs, its schedule can be less regular than the CTET.</li>
+                    </ul>
+                `,
+                '3': `
+                    <p>The TET is essential for two main groups:</p>
+                    <ul>
+                        <li><strong>Aspiring Teachers:</strong> It is the first and most critical step for anyone with a teacher training diploma/degree who wishes to apply for a government teaching post for Classes 1 to 8. You cannot apply for these jobs without a valid TET certificate.</li>
+                        <li><strong>In-service Teachers:</strong> Following a landmark Supreme Court judgment, many currently employed teachers (who were recruited before TET was mandatory) must now clear the exam. This is often a prerequisite for receiving promotions, increments, or even for continuing their service.</li>
+                    </ul>
+                `,
+                '4': `
+                    <p>The eligibility criteria, set by the NCTE, are specific to the paper you're applying for:</p>
+                    <ul>
+                        <li><strong>Paper I (Classes 1-5):</strong> You must have passed Senior Secondary (12th grade) with at least 50% marks AND have passed or be in the final year of a 2-year Diploma in Elementary Education (D.El.Ed).</li>
+                        <li><strong>Paper II (Classes 6-8):</strong> You must have a Bachelor's Degree AND have passed or be in the final year of a 2-year D.El.Ed, OR hold a Bachelor of Education (B.Ed) degree.</li>
+                    </ul>
+                    <p><em>Note: Specific percentage requirements can have relaxations for reserved categories. Always check the latest official notification.</em></p>
+                `,
+                '5': `
+                    <p>This is a crucial point of distinction:</p>
+                    <ul>
+                        <li><strong>For the TET Exam:</strong> There is absolutely <strong>no upper age limit</strong>. Anyone who meets the educational criteria can sit for the exam to earn the certificate.</li>
+                        <li><strong>For a Teaching Job:</strong> The age limit is determined by the recruiting body (e.g., JKSSB). For instance, they might specify an age bracket of 18-40 years for a particular vacancy. So, while you can get a TET certificate at age 45, you may not be eligible to apply for a new government job if you exceed the post's age limit.</li>
+                    </ul>
+                `,
+                '6': `
+                    <p>The exam is bifurcated to assess a candidate's suitability for different age groups of students:</p>
+                    <ul>
+                        <li><strong>Paper I:</strong> Focuses on the psychology and learning needs of children aged 6-11 years (Classes 1-5). The questions are designed to test your ability to teach at the primary level.</li>
+                        <li><strong>Paper II:</strong> Focuses on the developmental stage and academic needs of children aged 11-14 years (Classes 6-8). The subject matter is more advanced, and it assesses deeper content knowledge.</li>
+                    </ul>
+                    <p>A candidate who is qualified for both levels can appear in both papers in a single session to be eligible for all classes from 1 to 8.</p>
+                `,
+                '7': `
+                    <p>The mode of examination determines how you will interact with the test:</p>
+                    <ul>
+                        <li><strong>CTET (Online):</strong> This is a Computer-Based Test (CBT). You will be assigned a computer at an official exam center. You'll read questions on the screen and select answers using the mouse. It offers features like easy navigation between questions and a timer on screen.</li>
+                        <li><strong>JKTET (Offline):</strong> This has traditionally been a pen-and-paper test. You receive a physical question booklet and an OMR (Optical Mark Recognition) sheet. You must darken the correct bubble on the OMR sheet. This requires careful handling as improper marking can lead to errors.</li>
+                    </ul>
+                `,
+                 '8': `
+                    <p>The structure is identical and straightforward for both Paper I and Paper II. The exam consists of <strong>150 Multiple Choice Questions (MCQs)</strong>.</p>
+                    <p>The total marks for the exam are also <strong>150</strong>. This follows a simple and direct "one question, one mark" format. There are no questions with higher or lower weightage, making every question equally important.</p>
+                `,
+                '9': `
+                    <p>The time allotted for completing each paper is <strong>150 minutes, which is equal to 2 hours and 30 minutes</strong>.</p>
+                    <p>This timing is intentionally set to average out to exactly <strong>one minute per question</strong>. Effective time management is therefore a critical skill. It is advised not to spend too much time on any single difficult question, as it could compromise your ability to attempt all 150 questions.</p>
+                `,
+                '10': `
+                    <p>The marking scheme is designed to be simple and rewarding for correct knowledge.</p>
+                    <ul>
+                        <li>For every correct answer you choose, you are awarded <strong>+1 mark</strong>.</li>
+                        <li>There are no marks awarded for questions that you do not attempt.</li>
+                    </ul>
+                `,
+                '11': `
+                    <p>This is one of the most significant advantages for candidates taking the TET. There is <strong>NO negative marking</strong> for incorrect answers.</p>
+                    <p>This means there is no penalty if you choose the wrong option. Strategically, this encourages you to attempt every single one of the 150 questions. Even if you are unsure, making an educated guess is always better than leaving a question unanswered, as there is no risk of losing marks.</p>
+                `,
+                '12': `
+                    <p>Paper I is divided into five sections, each carrying equal weightage of 30 marks:</p>
+                    <ul>
+                        <li><strong>Child Development & Pedagogy:</strong> Focuses on child psychology and teaching methods for primary students.</li>
+                        <li><strong>Language I:</strong> Tests comprehension and pedagogical skills in your chosen first language.</li>
+                        <li><strong>Language II:</strong> Tests the same skills in a second language.</li>
+                        <li><strong>Mathematics:</strong> Covers basic mathematical concepts and how to teach them.</li>
+                        <li><strong>Environmental Studies:</strong> Covers basic concepts of science and social studies, and their pedagogy.</li>
+                    </ul>
+                `,
+                '13': `
+                    <p>Paper II has a slightly different structure. The first three sections are compulsory for everyone, while the fourth is a choice based on your academic background:</p>
+                    <ul>
+                        <li><strong>Compulsory Sections:</strong>
+                            <ul>
+                                <li>Section 1: Child Development & Pedagogy (30 Marks)</li>
+                                <li>Section 2: Language I (30 Marks)</li>
+                                <li>Section 3: Language II (30 Marks)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Optional Section (Choose one):</strong>
+                            <ul>
+                                <li><strong>(A) Mathematics & Science:</strong> For candidates with a background in these subjects.</li>
+                                <li><strong>(B) Social Studies/Social Science:</strong> For candidates with a background in humanities or commerce.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                `,
+                '14': `
+                    <p>The foundation of the TET syllabus is the curriculum prescribed by the <strong>NCERT for Classes 1 to 8</strong>. </p>
+                    <p>However, the questions are designed to test more than just factual recall. They assess: </p>
+                    <ul>
+                        <li><strong>Conceptual Understanding:</strong> How well you understand the core concepts.</li>
+                        <li><strong>Pedagogical Application:</strong> How you would apply that knowledge to teach children in a real classroom setting.</li>
+                    </ul>
+                    <p>Therefore, a thorough study of NCERT textbooks with a focus on understanding the 'why' and 'how' is essential for preparation.</p>
+                `,
+                '15': `
+                    <p>The frequency of the exam determines your planning and preparation timeline:</p>
+                    <ul>
+                        <li><strong>CTET:</strong> Has a highly reliable and predictable schedule. It is conducted <strong>twice every year</strong> (biannually), usually in the summer (July-Aug) and winter (Dec-Jan) cycles. This gives aspirants a consistent target.</li>
+                        <li><strong>JKTET:</strong> The schedule for the state-level TET is less predictable and is announced by the J&K administration based on their needs. There can sometimes be a gap of more than a year between two exams.</li>
+                    </ul>
+                `,
+                '16': `
+                    <p>To be declared "TET Qualified," a candidate must achieve the minimum passing score:</p>
+                    <ul>
+                        <li><strong>General Category:</strong> Must score <strong>60% or more</strong> of the total marks. This translates to <strong>90 marks out of 150</strong>.</li>
+                        <li><strong>Reserved Categories (SC/ST/OBC etc.):</strong> Are typically given a 5% relaxation. They need to score <strong>55% or more</strong>, which is 82.5. This is often rounded to <strong>82 or 83 marks</strong>, depending on the conducting body's rules.</li>
+                    </ul>
+                `,
+                '17': `
+                    <p>This is a major and beneficial update for all TET aspirants. Previously, a TET certificate was valid for only seven years, after which one had to retake the exam.</p>
+                    <p>The NCTE has now made the certificate valid for a <strong>lifetime</strong>. This means once you qualify the TET, your eligibility is permanent. You will not need to take the exam again for eligibility purposes, though you can still choose to retake it to improve your score.</p>
+                `,
+                '18': `
+                    <p>There is <strong>no restriction</strong> on the number of times a candidate can attempt the TET. This provides great flexibility.</p>
+                    <p>You can reappear as many times as you need to clear the exam. Furthermore, even after qualifying, you can take the test again to improve your score. This is particularly useful in states where some weightage is given to TET marks in the final merit list for teacher recruitment.</p>
+                `,
+                '19': `
+                    <p>This is a critical distinction that every aspirant must understand. Qualifying the TET <strong>does not guarantee you a teaching job</strong>.</p>
+                    <p>The TET certificate is an <strong>eligibility credential</strong>. It is the key that unlocks the door, allowing you to apply for teaching vacancies. After qualifying, you must watch out for recruitment notifications from agencies like the JKSSB or KVS. The actual selection for the job typically involves a separate, highly competitive recruitment exam, followed by document verification.</p>
+                `,
+                '20': `
+                    <p>For currently employed teachers who now need to pass the TET as per the Supreme Court's mandate, there is a specific timeframe.</p>
+                    <p>They have a <strong>two-year window</strong> to clear the exam. It is very important to note that this two-year clock <strong>does not start from the date of the Supreme Court's order</strong>. It will begin only from the date the Government of Jammu and Kashmir officially issues a formal notification or order implementing this policy for its employees.</p>
+                `,
+                'syllabus-overview': `
+                    <p>Here is a quick overview of the subjects covered in the TET exam. For a complete breakdown with topics and PYQs, click the button at the bottom.</p>
+                    
+                    <p class="sub-heading">Paper I (For Classes 1-5)</p>
+                    <p>Total Sections: 5 | Total Marks: 150</p>
+                    <ul>
+                        <li>Section 1: Child Development & Pedagogy (30 Marks)</li>
+                        <li>Section 2: Language I (30 Marks)</li>
+                        <li>Section 3: Language II (30 Marks)</li>
+                        <li>Section 4: Mathematics (30 Marks)</li>
+                        <li>Section 5: Environmental Studies (30 Marks)</li>
+                    </ul>
+
+                    <p class="sub-heading">Paper II (For Classes 6-8)</p>
+                    <p>Total Sections: 4 | Total Marks: 150</p>
+                    <ul>
+                        <li><strong>Compulsory Sections:</strong>
+                            <ul>
+                                <li>Section 1: Child Development & Pedagogy (30 Marks)</li>
+                                <li>Section 2: Language I (30 Marks)</li>
+                                <li>Section 3: Language II (30 Marks)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Optional Section (Choose one):</strong>
+                            <ul>
+                                <li>Section 4(A): Mathematics & Science (60 Marks)</li>
+                                <li>Section 4(B): Social Studies / Social Science (60 Marks)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <button class="link-to-detailed" data-target="syllabus" data-title="Detailed Exam Syllabus">View Detailed Syllabus with PYQs</button>
+                `,
+                'syllabus': `
+                    <p>The syllabus is comprehensive, focusing on both content mastery and pedagogical skills. It is based on the NCERT curriculum for Classes 1-8.</p>
+                    
+                    <p class="sub-heading">Paper I (For Classes 1-5) Detailed Syllabus & Examples</p>
+                    <ul>
+                        <li><p class="sub-heading-small">1. Child Development & Pedagogy (30 Qs)</p>
+                            <ul>
+                                <li><strong>Child Development (Primary School Child):</strong> Concept of development, principles of growth, role of heredity & environment, socialization processes, constructs of Piaget, Kohlberg, and Vygotsky, child-centered education, intelligence theories, language & thought.</li>
+                                <li><strong>Inclusive Education:</strong> Addressing learners from diverse backgrounds, including disadvantaged and deprived. Addressing the needs of children with learning difficulties (dyslexia, etc.), addressing the talented, creative, specially-abled learners.</li>
+                                <li><strong>Learning & Pedagogy:</strong> How children think and learn, basic teaching-learning processes, child as a problem-solver, cognition, emotion, motivation and learning.</li>
+                            </ul>
+                            <div class="example-question">
+                                <p><strong>PYQ Example:</strong> According to Lev Vygotsky, the primary cause of cognitive development is:</p>
+                                <ul><li>(A) Equilibrium</li><li>(B) Social interaction</li><li>(C) Adjustment of mental schemas</li><li>(D) Stimulus-response pairing</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (B) Social interaction (Source: CTET, Jan 2024)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li><p class="sub-heading-small">2. Language I & II (30 Qs each)</p>
+                            <ul>
+                                <li><strong>Language Comprehension:</strong> Reading two unseen passages (one prose/drama, one poem) with questions on comprehension, grammar, and verbal ability.</li>
+                                <li><strong>Pedagogy of Language Development:</strong> Principles of language teaching, role of listening and speaking, function of language, critical perspective on the role of grammar, challenges of teaching in a diverse classroom, language skills, evaluating language comprehension, teaching-learning materials (TLMs).</li>
+                            </ul>
+                            <div class="example-question">
+                                <p><strong>PYQ Example:</strong> The use of storytelling, rhymes, and fun activities in the classroom is a way of creating a ___________ learning environment.</p>
+                                <ul><li>(A) Stressful</li><li>(B) Disciplined</li><li>(C) Challenging</li><li>(D) Conducive and child-friendly</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (D) Conducive and child-friendly (Source: CTET, Aug 2023)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li><p class="sub-heading-small">3. Mathematics (30 Qs)</p>
+                            <ul>
+                                <li><strong>Content:</strong> Geometry, Shapes, Solids, Numbers, Addition, Subtraction, Multiplication, Division, Measurement, Weight, Time, Volume, Data Handling, Patterns, Money.</li>
+                                <li><strong>Pedagogical Issues:</strong> Nature of mathematics, place of mathematics in the curriculum, language of mathematics, community mathematics, evaluation methods, diagnostic and remedial teaching.</li>
+                            </ul>
+                            <div class="example-question">
+                                <p><strong>PYQ Example:</strong> Which of the following is the most appropriate strategy to introduce the concept of addition of two numbers to primary students?</p>
+                                <ul><li>(A) Solving word problems based on addition.</li><li>(B) Using concrete objects to represent the numbers.</li><li>(C) Showing the algorithm of addition on the blackboard.</li><li>(D) Providing a lot of practice questions for addition.</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (B) Using concrete objects to represent the numbers. (Source: CTET, Jan 2024)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li><p class="sub-heading-small">4. Environmental Studies (30 Qs)</p>
+                            <ul>
+                                <li><strong>Content:</strong> Family and Friends, Food, Shelter, Water, Travel, Things We Make and Do. (Based on the six themes of the NCERT EVS curriculum).</li>
+                                <li><strong>Pedagogical Issues:</strong> Concept and scope of EVS, significance of integrated EVS, environmental studies & education, learning principles, experimentation/practical work, discussion, CCE, TLMs.</li>
+                            </ul>
+                             <div class="example-question">
+                                <p><strong>PYQ Example:</strong> While teaching the theme 'Travel' in EVS, a teacher can utilize:</p>
+                                <ul><li>(A) Students' experiences of travel.</li><li>(B) Pictures and videos of different modes of transport.</li><li>(C) A discussion on problems faced by travelers.</li><li>(D) All of the above.</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (D) All of the above. (Source: CTET, Aug 2023)</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p class="sub-heading">Paper II (For Classes 6-8) Detailed Syllabus & Examples</p>
+                    <p>Paper II consists of three compulsory sections and one optional section based on your teaching specialization.</p>
+                    <ul>
+                        <li><p class="sub-heading-small">Compulsory Section 1: Child Development & Pedagogy (30 Qs)</p>
+                             <ul>
+                                <li>This section is similar to Paper I but focuses on the developmental needs of adolescents (11-14 years). Topics include advanced concepts of inclusive education, assessment, and evaluation practices like CCE.</li>
+                            </ul>
+                            <div class="example-question">
+                                <p><strong>PYQ Example:</strong> A teacher encourages her students to work in groups and engage in discussions. This approach reflects which of the following views?</p>
+                                <ul><li>(A) Learning as a passive process.</li><li>(B) Learning as a social activity.</li><li>(C) Learning as an individualistic activity.</li><li>(D) Learning as a behaviorist process.</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (B) Learning as a social activity. (Source: CTET, Jan 2024, Paper II)</span>
+                                </div>
+                            </div>
+                        </li>
+                         <li><p class="sub-heading-small">Compulsory Sections 2 & 3: Language I & II (30 Qs each)</p>
+                             <ul>
+                                <li>The syllabus is the same as Paper I (Comprehension + Pedagogy), but the difficulty level of the passages and grammar questions is higher, suitable for the elementary stage.</li>
+                            </ul>
+                            <div class="example-question">
+                                <p><strong>PYQ Example:</strong> What is the primary objective of teaching grammar in a language class?</p>
+                                <ul><li>(A) To help students score better in exams.</li><li>(B) To enable students to communicate accurately and effectively.</li><li>(C) To make students learn all the rules of grammar by heart.</li><li>(D) To focus on sentence structures only.</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (B) To enable students to communicate accurately and effectively. (Source: CTET, Aug 2023, Paper II)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <p class="sub-heading">Optional Section (Choose ONE of the following):</p>
+                        <li><p class="sub-heading-small">Option A: Mathematics & Science (60 Qs)</p>
+                             <ul>
+                                <li><strong>Mathematics:</strong> Number System, Algebra, Geometry, Mensuration, Data Handling. Pedagogical issues like nature of mathematics, evaluation, and remedial teaching.</li>
+                                <li><strong>Science:</strong> Food, Materials, The World of the Living, Moving Things, How Things Work, Natural Phenomena, Natural Resources. Pedagogical issues like the nature of science, aims, evaluation, and scientific method.</li>
+                            </ul>
+                            <div class="example-question">
+                                <p><strong>PYQ Example (Maths):</strong> To prove that √2 is an irrational number, a teacher begins by assuming that it is a rational number. This method is known as:</p>
+                                <ul><li>(A) Induction</li><li>(B) Deduction</li><li>(C) Proof by contradiction</li><li>(D) Analysis</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (C) Proof by contradiction (Source: CTET, Jan 2024, Paper II)</span>
+                                </div>
+                            </div>
+                            <div class="example-question">
+                                <p><strong>PYQ Example (Science):</strong> A teacher adds a pinch of salt to a beaker of water and stirs it. The salt disappears. Which concept is best taught using this activity?</p>
+                                <ul><li>(A) Sublimation</li><li>(B) Evaporation</li><li>(C) The particulate nature of matter</li><li>(D) Density</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (C) The particulate nature of matter (Source: CTET, Aug 2023, Paper II)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li><p class="sub-heading-small">Option B: Social Studies/Social Sciences (60 Qs)</p>
+                             <ul>
+                                <li><strong>History:</strong> When, Where and How; The Earliest Societies; The First Cities; Early States; New Ideas; The First Empire; Contacts with Distant Lands; New Kings and Kingdoms; Sultans of Delhi; Architecture; Creation of an Empire; Social Change; Regional Cultures; The Establishment of Company Power; The Revolt of 1857-58; The Nationalist Movement; India After Independence.</li>
+                                <li><strong>Geography:</strong> Geography as a social study and a science; Planet Earth, Globe; Environment; Air; Water; Human Environment; Resources; Agriculture.</li>
+                                <li><strong>Social and Political Life (Civics):</strong> Diversity; Government; Local Government; Democracy; State Government; Understanding Media; Unpacking Gender; The Constitution; Parliamentary Government; The Judiciary; Social Justice and the Marginalized.</li>
+                                <li><strong>Pedagogical Issues:</strong> Concept & Nature of Social Science; Class Room Processes; Developing Critical thinking; Enquiry/Empirical Evidence; Sources – Primary & Secondary; Projects Work; Evaluation.</li>
+                            </ul>
+                            <div class="example-question">
+                                <p><strong>PYQ Example (History):</strong> Which of the following is a primary source for understanding the Harappan civilization?</p>
+                                <ul><li>(A) The Vedas</li><li>(B) A modern book on ancient India</li><li>(C) Coins from the Mauryan period</li><li>(D) The seals and pottery excavated from Mohenjo-Daro</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (D) The seals and pottery excavated from Mohenjo-Daro (Source: CTET, Jan 2024, Paper II)</span>
+                                </div>
+                            </div>
+                             <div class="example-question">
+                                <p><strong>PYQ Example (Geography):</strong> To explain the concept of 'rotation' of the Earth, the most effective teaching aid would be a:</p>
+                                <ul><li>(A) Map of the world</li><li>(B) Photograph of the Earth from space</li><li>(C) Globe</li><li>(D) Chart showing day and night</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (C) Globe (Source: CTET, Aug 2023, Paper II)</span>
+                                </div>
+                            </div>
+                             <div class="example-question">
+                                <p><strong>PYQ Example (Civics):</strong> In a democratic country, who holds the ultimate power?</p>
+                                <ul><li>(A) The President</li><li>(B) The Parliament</li><li>(C) The People</li><li>(D) The Judiciary</li></ul>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer-container">
+                                    <span class="answer">Answer: (C) The People (Source: CTET, Jan 2024, Paper II)</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                `,
+                'pattern': `
+                    <p>Understanding the exam pattern is crucial for effective time management and strategy.</p>
+                    <ul>
+                        <li><strong>Total Questions:</strong> 150 Multiple Choice Questions (MCQs) for each paper.</li>
+                        <li><strong>Total Marks:</strong> 150 Marks.</li>
+                        <li><strong>Marking Scheme:</strong> +1 mark for each correct answer.</li>
+                        <li><strong>Negative Marking:</strong> There is <strong>no negative marking</strong> for incorrect answers.</li>
+                        <li><strong>Duration:</strong> 150 minutes (2.5 hours) for each paper.</li>
+                        <li><strong>Mode:</strong> CTET is Online (CBT), while JKTET is traditionally Offline (OMR-based).</li>
+                        <li><strong>Qualifying Marks:</strong> 60% (90/150) for General category, and 55% (82-83/150) for reserved categories.</li>
+                    </ul>
+                `,
+                'resources': `
+                    <p>A structured preparation strategy is key to success. Here are the most essential resources:</p>
+                    <ul>
+                        <li><strong>NCERT Textbooks (Classes 1-8):</strong> This is the absolute foundation. The entire syllabus is derived from these books. Read them thoroughly to build conceptual clarity.</li>
+                        <li><strong>Previous Year Question Papers:</strong> Solving past papers of both CTET and JKTET is the most effective way to understand the exam pattern, question types, and difficulty level.</li>
+                        <li><strong>Standard Reference Books:</strong> Pick one good, well-reviewed book for Child Development & Pedagogy, as this is a critical section. Books by authors like R. Gupta or Arihant are popular choices.</li>
+                        <li><strong>Online Mock Tests:</strong> Regularly take online mock tests to improve your speed, accuracy, and time management skills, especially for the online CTET.</li>
+                    </ul>
+                `
+            };
+            
+            // --- New Modal Functions with History API ---
+
+            const openModal = (point, title) => {
+                // Set content and display modal
+                modalTitle.innerText = title;
+                modalBody.innerHTML = detailedInfo[point] || '<p>Information not available.</p>';
+                modalContent.scrollTop = 0;
+                
+                document.body.classList.add('modal-open');
+                modalContainer.classList.add('active');
+
+                // Add entry to browser history
+                const modalId = `modal-${point}`;
+                if (location.hash !== `#${modalId}`) {
+                    history.pushState({ modalId: point }, title, `#${modalId}`);
+                }
+            };
+
+            const closeModal = () => {
+                // This function just handles the visual closing
+                document.body.classList.remove('modal-open');
+                modalContainer.classList.remove('active');
+            };
+
+            // Event listeners for opening modals
+            const clickableCards = document.querySelectorAll('.clickable-card');
+            clickableCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const point = card.getAttribute('data-point');
+                    const title = card.getAttribute('data-title');
+                    openModal(point, title);
+                });
+            });
+
+            // Event listeners for closing modals (by going back in history)
+            closeModalBtn.addEventListener('click', () => history.back());
+            modalContainer.addEventListener('click', (event) => {
+                if (event.target === modalContainer) {
+                    history.back();
+                }
+            });
+
+            // Listener for internal modal navigation (e.g., from overview to detailed syllabus)
+            modalBody.addEventListener('click', (event) => {
+                // Handle link to detailed view
+                const button = event.target.closest('.link-to-detailed');
+                if (button) {
+                    const targetPoint = button.getAttribute('data-target');
+                    const targetTitle = button.getAttribute('data-title');
+                    
+                    // Update content
+                    modalTitle.innerText = targetTitle;
+                    modalBody.innerHTML = detailedInfo[targetPoint] || '<p>Information not available.</p>';
+                    modalContent.scrollTop = 0;
+
+                    // Replace current history state instead of pushing a new one
+                    history.replaceState({ modalId: targetPoint }, targetTitle, `#modal-${targetPoint}`);
+                }
+
+                // Handle show answer button
+                const answerButton = event.target.closest('.show-answer-btn');
+                if (answerButton) {
+                    const answerContainer = answerButton.nextElementSibling;
+                    if (answerContainer && answerContainer.classList.contains('answer-container')) {
+                        answerContainer.style.display = 'block';
+                        answerButton.style.display = 'none'; // Hide the button after click
+                    }
+                }
+            });
+
+
+            // Main handler for browser back/forward button clicks
+            window.addEventListener('popstate', (event) => {
+                if (location.hash.startsWith('#modal-')) {
+                    // If a modal hash exists, it means the user navigated FORWARD to a modal state.
+                    // We need to ensure the correct modal is open.
+                    const point = location.hash.replace('#modal-', '');
+                    const card = document.querySelector(`[data-point="${point}"]`);
+                    if (card && !modalContainer.classList.contains('active')) {
+                        const title = card.getAttribute('data-title');
+                        openModal(point, title);
+                    }
+                } else {
+                    // If no modal hash exists, it means the user has navigated BACK from a modal state.
+                    // We must close any active modal.
+                    closeModal();
+                }
+            });
+
+            // Handle page load with a hash (deep linking)
+            if (location.hash.startsWith('#modal-')) {
+                const point = location.hash.replace('#modal-', '');
+                const card = document.querySelector(`[data-point="${point}"]`);
+                if (card) {
+                    const title = card.getAttribute('data-title');
+                    // Use a timeout to ensure the rest of the page is ready before showing the modal
+                    setTimeout(() => openModal(point, title), 100); 
+                }
+            }
+
+
+            // --- AI Assistant Logic ---
+            const aiFab = document.getElementById('ai-fab');
+            const aiChatWindow = document.getElementById('ai-chat-window');
+            const closeChatBtn = document.getElementById('chat-close-btn');
+            const chatForm = document.getElementById('chat-input-form');
+            const chatInput = document.getElementById('chat-input');
+            const chatMessages = document.getElementById('chat-messages');
+            const initialSuggestions = document.getElementById('chat-suggestions'); // Reference the initial container
+
+            aiFab.addEventListener('click', () => {
+                aiChatWindow.classList.toggle('active');
+            });
+            
+            closeChatBtn.addEventListener('click', () => {
+                aiChatWindow.classList.remove('active');
+            });
+
+            chatForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const userText = chatInput.value.trim();
+                if (!userText) return;
+                
+                handleUserQuery(userText);
+                chatInput.value = '';
+            });
+
+            chatMessages.addEventListener('click', (e) => {
+                if (e.target.classList.contains('suggestion-btn')) {
+                    const userText = e.target.textContent;
+                    handleUserQuery(userText);
+                }
+            });
+            
+            function handleUserQuery(text) {
+                addMessage('user', text);
+                
+                const suggestionsContainer = document.getElementById('chat-suggestions');
+                if (suggestionsContainer) {
+                    suggestionsContainer.remove();
+                }
+
+                showTypingIndicator();
+                
+                setTimeout(() => {
+                    const aiText = getAIResponse(text);
+                    removeTypingIndicator();
+                    addMessage('ai', aiText);
+                }, 1200);
+            }
+            
+            function addMessage(sender, text) {
+                const messageEl = document.createElement('div');
+                messageEl.classList.add('chat-message', `${sender}-message`);
+                messageEl.textContent = text;
+                chatMessages.appendChild(messageEl);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            function showTypingIndicator() {
+                const typingEl = document.createElement('div');
+                typingEl.classList.add('chat-message', 'ai-message', 'typing-indicator');
+                typingEl.innerHTML = `<span></span><span></span><span></span>`;
+                chatMessages.appendChild(typingEl);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            function removeTypingIndicator() {
+                const typingEl = document.querySelector('.typing-indicator');
+                if(typingEl) {
+                    typingEl.remove();
+                }
+            }
+            
+            function getAIResponse(query) {
+                const q = query.toLowerCase().replace(/[^a-zA-Z0-9\s]/g, '');
+
+                // Greetings
+                if (q.includes('namaste') || q.includes('hello') || q.includes('hi')) {
+                    return "Namaste! Main aapki TET exam se judi kya sahayata kar sakta/sakti hoon?";
+                }
+                
+                // Thanks
+                if (q.includes('shukriya') || q.includes('dhanyavad') || q.includes('thank')) {
+                    return "Aapka swagat hai! Agar koi aur sawaal ho toh zaroor puchiye.";
+                }
+
+                // Keyword-based responses in Hinglish
+                const responses = {
+                    'validity|kab tak valid': "TET certificate ab lifetime ke liye valid hai. Ek baar pass karliya, toh hamesha ke liye chutti! (Point 17)",
+                    'negative marking': "Bilkul nahi! TET exam mein koi negative marking nahi hoti. Isliye aap sabhi 150 questions attempt karein. (Point 11)",
+                    'age|umar': "TET exam dene ke liye koi age limit nahi hai. Lekin, jab aap teaching job ke liye apply karenge, tab uss job ki age limit maani jaayegi. (Point 5)",
+                    'passing marks|qualifying|kitne marks': "General category ke liye 60% (150 mein se 90 marks) chahiye. Reserved categories (SC/ST/OBC) ke liye 55% (lagbhag 82-83 marks) zaroori hain. (Point 16)",
+                    'syllabus': "Syllabus NCERT ke 1st se 8th class ke topics par based hai. Paper I mein 5 sections hote hain aur Paper II mein 4, jisme ek optional hota hai (Maths/Science ya Social Studies). (Points 12, 13, 14)",
+                    'paper|kitne paper': "TET mein do paper hote hain: Paper I (class 1-5 ke teachers ke liye) aur Paper II (class 6-8 ke teachers ke liye). (Point 6)",
+                    'ctet jktet': "CTET national level ka online exam hai jo saal mein do baar hota hai aur J&K mein valid hai. JKTET, UT-level ka offline exam hai jiska schedule regular nahi hota. (Points 2, 7, 15)",
+                    'qualification|education': "Paper I ke liye 12th (50%) + D.El.Ed. chahiye. Paper II ke liye Graduation + D.El.Ed ya B.Ed. hona zaroori hai. (Point 4)",
+                    'mode|online|offline': "CTET hamesha online (Computer-Based) hota hai. JKTET ab tak offline (pen-paper) hota aaya hai. (Point 7)",
+                    'time|duration|samay': "Har paper ke liye 150 minute, yaani 2.5 ghante milte hain. Har sawaal ke liye average 1 minute. (Point 9)",
+                    'job|naukri': "Yaad rakhein, TET pass karne se job nahi milti. Yeh sirf aapko teacher ki job ke liye apply karne ke 'eligible' banata hai. (Point 19)",
+                    'attempts|kitni baar': "Aap kitni bhi baar TET exam de sakte hain, koi limit nahi hai. Score improve karne ke liye bhi dobara de sakte hain. (Point 18)",
+                    'in-service|jo job': "Jo teachers pehle se job mein hain, unhe J&K government ke official notification ke baad 2 saal ke andar yeh exam paas karna hoga. (Point 20)"
+                };
+
+                for (const key in responses) {
+                    const keywords = key.split('|');
+                    if (keywords.some(keyword => q.includes(keyword))) {
+                        return responses[key];
+                    }
+                }
+
+                return "Maaf kijiye, main aapka sawaal samajh nahi paaya/paayi. Aap 'syllabus', 'age limit', ya 'negative marking' jaise topics ke baare mein puch sakte hain.";
+            }
+
+
+            // Decoder animation for intro name
+            const nameElement = document.getElementById('intro-name');
+            const originalText = nameElement.textContent;
+            const chars = '!<>-_\\/[]{}—=+*^?#________';
+            let intervalId = null;
+
+            const decoderEffect = () => {
+                let iteration = 0;
+                clearInterval(intervalId);
+                
+                intervalId = setInterval(() => {
+                    nameElement.textContent = originalText.split('')
+                        .map((letter, index) => {
+                            if(index < iteration) {
+                                return originalText[index];
+                            }
+                            return chars[Math.floor(Math.random() * chars.length)]
+                        })
+                        .join('');
+                    
+                    if(iteration >= originalText.length){ 
+                        clearInterval(intervalId);
+                    }
+                    
+                    iteration += 1 / 3;
+                }, 40);
+            }
+            
+            setTimeout(decoderEffect, 800);
+
+
+        });
+    </script>
+
+</body>
+</html>
+
